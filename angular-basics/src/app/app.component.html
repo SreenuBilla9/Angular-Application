@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>Welcome to {{ title }}!</h1>
+</div>
+
+<h1>Work with String</h1>
+<p>{{ sampleStr }}</p>
+<p>{{ sampleStr | lowercase }}</p>
+<p>{{ sampleStr | uppercase }}</p>
+<p>{{ sampleStr | slice: 3 }}</p>
+<p>{{ sampleStr | slice: 3:11 }}</p>
+
+<h1>Work with Date and Time</h1>
+<p>{{ sampleDate }}</p>
+<p>{{ sampleDate | date: fulldate }}</p>
+<p>{{ sampleDate | date: "dd MM yyyy" }}</p>
+<p>{{ sampleDate | date: "dd MMM yyyy" }}</p>
+
+<p>{{ sampleDate | date: "dd MMM yyyy hh mm a" }}</p>
+
+<router-outlet></router-outlet>
